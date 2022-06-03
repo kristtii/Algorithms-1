@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     n, p = [int(x) for x in file.readline().split(" ", 1)]
 
-    g = graph(n, file)
+    g = data_structures.graph(n, file)
 
     connected_components = algorithms.dfs(g)
     total_pairings = data_structures.calculate_pairings(connected_components)
